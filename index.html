@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Aswin Karthick M</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #0056b3;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        /* About Section */
+        .about-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 50px;
+            align-items: center;
+        }
+
+        .about-content {
+            flex: 1 1 60%;
+        }
+
+        /* Skills Section */
+        .skills-section {
+            margin-bottom: 50px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .skill-card {
+            background: white;
+            border-left: 4px solid #007bff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .skill-card h3 {
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+
+        .skill-card ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        /* Projects Section */
+        .projects-section {
+            margin-bottom: 50px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .project-card-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .project-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
+            border-top: 4px solid #28a745;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+
+        .project-card h3 {
+            color: #28a745;
+            margin-bottom: 10px;
+        }
+
+        /* Navigation */
+        .navigation {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .back-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.2s ease;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .about-section {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .profile-image {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <!-- Hero section -->
+        <section class="hero">
+            <h1>Aswin Karthick M</h1>
+            <p class="tagline">Full Stack Developer & UI/UX Enthusiast</p>
+        </section>
+
+        <!-- About section (No Image) -->
+        <section class="about-section">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>
+                    I'm Aswin Karthick M, a passionate full-stack developer who enjoys turning complex problems into simple, elegant solutions. 
+                    With hands-on experience in both frontend and backend technologies, I strive to create clean, efficient, and accessible web applications.
+                </p>
+                <p>
+                    Outside of work, I love exploring open-source tools, learning new frameworks, and occasionally writing technical blogs to share insights with the community.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section">
+            <h2>Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React.js</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Python</li>
+                        <li>SQL & NoSQL</li>
+                        <li>RESTful APIs</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools & Others</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>Docker</li>
+                        <li>CI/CD</li>
+                        <li>Agile Methodologies</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="projects-section">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <a href="X:\New folder\html\bulb.html" class="project-card-link">
+                    <div class="project-card">
+                        <h3>Bulb</h3>
+                        <p>A bulb ON/OFF toggle project demonstrating DOM manipulation.</p>
+                    </div>
+                </a>
+                <a href="X:\New folder\html\todo.html" class="project-card-link">
+                    <div class="project-card">
+                        <h3>To-Do App</h3>
+                        <p>A simple task manager to keep track of daily tasks using local storage.</p>
+                    </div>
+                </a>
+                <a href="X:\New folder\html\function.html" class="project-card-link">
+                    <div class="project-card">
+                        <h3>Functions</h3>
+                        <p>Reusable JavaScript functions to demonstrate modular coding practices.</p>
+                    </div>
+                </a>
+                <a href="X:\New folder\html\counter.html" class="project-card-link">
+                    <div class="project-card">
+                        <h3>Counter</h3>
+                        <p>A simple counter app that increments and decrements values.</p>
+                    </div>
+                </a>
+                <a href="X:\New folder\html\togglepassword.html" class="project-card-link">
+                    <div class="project-card">
+                        <h3>Toggle Password</h3>
+                        <p>A toggle password visibility feature built using JavaScript.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
